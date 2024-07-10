@@ -40,8 +40,7 @@ const USER_CONFIG = {
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2024-12-01' },
-      ],
-      { keyword: 'birthday_message', date: '2024-09-21' },
+       { keyword: 'birthday_message', date: '2024-09-21' },
       ],
     },
   ],
