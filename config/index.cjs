@@ -15,6 +15,46 @@ const USER_CONFIG = {
 
   PROVINCE: '广东',
   CITY: '肇庆',
+  SWITCH: {
+    /** 每日天气 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: true,
+
+    /** 节假日 */
+    // 下一休息日综合提醒, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    holidaytts: false,
+
+    /** 每日N句 */
+    // 金山每日一句, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    CIBA: true,
+    
+    // 每日一言, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    oneTalk: false,
+    
+    // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    earthyLoveWords: true,
+    
+    // 朋友圈文案, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    momentCopyrighting: false,
+    
+    // 毒鸡汤, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poisonChickenSoup: false,
+    
+    // 古诗古文, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poetry: false,
+
+    /** 星座运势 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    horoscope: true,
+  
+    /** 生日消息和节日消息 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    birthdayMessage: false,
+  
+    /** 学生课表 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    courseSchedule: false,
+  },
 
   USERS: [
     {
@@ -28,38 +68,39 @@ const USER_CONFIG = {
       horoscopeDate: '09-21',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '小猪咪', year: '2005', date: '09-21',
+        },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {type: '*生日', name: '小猪咪的', year: '2005', date: '08-18',},
-        {type: '生日', name: '你的大猪头的', year: '2003', date: '02-22', },
-        {type: '节日', name: '相识纪念日', year: '2023', date: '11-04',},
-        {type: '节日', name: '在一起的纪念日', year: '2023', date: '12-01',},
+        {
+          type: '生日', name: '你的大猪头', year: '2003', date: '02-22',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2023', date: '11-04',
+        },
       ],
-      FESTIVALS_LIMIT:0
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2023-12-01' },
-       { keyword: 'birthday_message', date: '2024-09-21' },
+        { keyword: 'love_day', date: '2022-09-08' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },
       ],
-     {note_en.DATA},
-     {note_ch.DATA},
     },
   ],
-  
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '4u4R32XfoRJSmbBAx352XAq4yvC9hpyRxXs7zHOYcB4',
+  CALLBACK_TEMPLATE_ID: '',
 
   CALLBACK_USERS: [
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'orOzb6I-Ktt0ks209Kx1kHeaNUcY',
+      id: '',
     }
   ],
 
 }
 
 module.exports = USER_CONFIG
-
