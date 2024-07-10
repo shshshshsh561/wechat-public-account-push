@@ -14,7 +14,7 @@ const USER_CONFIG = {
   APP_SECRET: '5001d466d37c798672327b130a3fc80e',
 
   PROVINCE: '广东',
-  CITY: '肇庆四会',
+  CITY: '肇庆',
 
   USERS: [
     {
@@ -49,7 +49,7 @@ const USER_CONFIG = {
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'orOzb6I-Ktt0ks209Kx1kHeaNUcY',
+  CALLBACK_TEMPLATE_ID: 'CaQd-DtGL29UycEDGywUjof69yWaP2g9-3EWvcgQBig',
 
   CALLBACK_USERS: [
     {
