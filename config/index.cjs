@@ -15,6 +15,8 @@ const USER_CONFIG = {
 
   PROVINCE: '广东',
   CITY: '肇庆',
+  IS_SHOW_COLOR: false,
+  LITERARY_PREFERENCE: '网络',
   SWITCH: {
     /** 每日天气 */
     // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
